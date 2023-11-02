@@ -21,7 +21,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
+        port: 1752
         script: |
           cd /var/www/
           touch arta.txt
