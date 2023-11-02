@@ -23,6 +23,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 1752
         script: |
-          cd /var/www/
-          touch arta.txt
+          cd /var/www/flaskapp/
+          docker-compose up --detach
           
