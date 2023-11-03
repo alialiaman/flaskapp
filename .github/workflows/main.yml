@@ -35,5 +35,5 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USER }}/shopping-app-react:latest
+          tags: ${{ secrets.DOCKER_USER }}:latest
     
