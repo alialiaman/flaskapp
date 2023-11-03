@@ -32,8 +32,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./
-          file: ./Dockerfile
+          context: ../
+          file: ../Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USER }}/shopping-app-react:latest
     
