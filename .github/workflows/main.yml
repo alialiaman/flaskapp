@@ -22,9 +22,4 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       script: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - name: build the docker image
-      run: docker build .
-
-
-    - name: docker push
-      run: docker push       
+    
