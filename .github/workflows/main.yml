@@ -25,7 +25,6 @@ jobs:
         script: |
           cd /var/www/flaskapp/
           docker-compose up --detach
-<<<<<<< HEAD
     - name: docker login
       uses: actions/checkout@v2
       with:
@@ -39,6 +38,3 @@ jobs:
 
     - name: docker push
       run: docker push       
-=======
-  
->>>>>>> 3d61dcbdc4f6dae62d7918f863a52d6536ac4f33
