@@ -20,7 +20,7 @@ jobs:
       with:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      run: |
+      script: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build the docker image
       run: docker build .
