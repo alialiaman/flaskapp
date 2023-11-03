@@ -20,6 +20,6 @@ jobs:
       with:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      script: |
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+        script: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     
