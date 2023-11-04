@@ -36,4 +36,21 @@ jobs:
           file: ../Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USER }}/shopping-app-react:0.1
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: 1752
+        script: |
+          cd /var/www/
+          docker pull aliaman4/shopping-app-react:latest
+          touch arta.txt
     
