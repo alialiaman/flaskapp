@@ -57,4 +57,4 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 1752
         script: |
-          docker pull ghcr.io/alialiaman/env.IMAGE_NAME:sha-b1a44b8
+          docker pull ghcr.io/alialiaman/flaskapp:sha-b1a44b8
